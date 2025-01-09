@@ -1,8 +1,6 @@
 package io.github.patrikalm;
 
-import io.github.patrikalm.data_access.ComponentScanConfig;
-import io.github.patrikalm.data_access.StudentDao;
-import io.github.patrikalm.data_access.StudentDaoListImpl;
+import io.github.patrikalm.data_access.*;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
@@ -15,6 +13,8 @@ public class Main {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext (ComponentScanConfig.class);
 
         StudentDao studentDao = context.getBean(StudentDaoListImpl.class);
+
+        UserInputService userInputService = context.getBean(UserInputService.class);
 
 
 
