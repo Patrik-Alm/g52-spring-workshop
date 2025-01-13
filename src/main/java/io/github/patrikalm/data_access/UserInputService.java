@@ -1,7 +1,13 @@
 package io.github.patrikalm.data_access;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.Scanner;
+
 public interface UserInputService {
 
-    String getString();
+    @Autowired
+    String getString(Scanner scanner);
+
     int getInt();
 }
