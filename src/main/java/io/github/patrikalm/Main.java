@@ -1,6 +1,7 @@
 package io.github.patrikalm;
 
 import io.github.patrikalm.data_access.*;
+import io.github.patrikalm.util.UserInputService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
